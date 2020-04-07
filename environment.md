@@ -24,8 +24,11 @@ W folderze assests znajdują się wykorzystywane grafiki.
 ## Etap projektu
 Projekt znajduje się w początkowej fazie tworzenia. Zaimplementowane zostało środowisko agenta oraz podstawowe założenia. Na tym etapie nie zostały jeszcze rozwinięte aspekty sztucznej inteligencji, które docelowo stanowią główne założenia projektu.  
 
-Podczas tworzenia projektu został przeprowadzony test animacji: https://drive.google.com/open?id=1hjZTBw5KG8DYEDR41-XWf_Frn5yYsx3O. Po uruchomieniu projektu pojawia się środowisko z agentem, który przebywa z góry ustaloną trasę ruchu.  
+Podczas tworzenia projektu został przeprowadzony [test animacji](https://github.com/Kamilla260/AutomaticWaiter/blob/master/Animacja.mp4). Po uruchomieniu projektu pojawia się środowisko z agentem, który przebywa z góry ustaloną trasę ruchu.  
 
-Aktualnie środowisko agenta utworzone jest z siatki o wymiarach 19x10 oraz grafiki. Będzie ono z góry narzucone również w dalszych etapach rozwoju projektu. Nie jest dostępna konfiguracja wymiarów środowiska przy uruchamianiu. Na obecnym etapie wizerunek ślimaka traktowany jest jak ściana.
+Aktualnie środowisko agenta utworzone jest z siatki o wymiarach 19x10 oraz grafiki. Będzie ono z góry narzucone również w dalszych etapach rozwoju projektu. Nie jest dostępna konfiguracja wymiarów środowiska przy uruchamianiu. Na obecnym etapie wizerunek ślimaka traktowany jest jak ściana.  
+
+
+![Srodowisko](https://github.com/Kamilla260/AutomaticWaiter/blob/master/envForRaport.png)
 
 
