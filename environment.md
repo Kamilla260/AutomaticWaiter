@@ -29,6 +29,6 @@ Podczas tworzenia projektu został przeprowadzony [test animacji](https://drive.
 Aktualnie środowisko agenta utworzone jest z siatki o wymiarach 19x10 oraz grafiki. Będzie ono z góry narzucone również w dalszych etapach rozwoju projektu. Nie jest dostępna konfiguracja wymiarów środowiska przy uruchamianiu. Na obecnym etapie wizerunek ślimaka traktowany jest jak ściana.  
 
 
-![  ](https://drive.google.com/open?id=1fUL9HC3pSRVGslo72aeSBLFlEgRZTjAQ)
+![Srodowisko](https://github.com/Kamilla260/AutomaticWaiter/blob/master/envForRaport.png)
 
 
