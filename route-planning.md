@@ -65,9 +65,9 @@ Na obecnym etapie nie zostało jeszcze uwzględnione wyświetlanie zajętego sto
 
 ### Funkcja następnika  
 
-def _expandSmalest(nds, vst, goal):
-    nd = nds.pop(_smalestIndex(nds))
-    vst.append(nd.st)
+    def _expandSmalest(nds, vst, goal):
+        nd = nds.pop(_smalestIndex(nds))
+        vst.append(nd.st)
 
     nxt = map.turnLeft(nd.st)
     if nxt not in vst:
@@ -84,5 +84,5 @@ def _expandSmalest(nds, vst, goal):
 
 ### Przyjęta heurystyka  
 
-def _h(s, e):
-    return math.sqrt((s.height-s.height)**2 + (e.width-e.width)**2)
+    def _h(s, e):
+         return math.sqrt((s.height-s.height)**2 + (e.width-e.width)**2)
