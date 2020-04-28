@@ -15,7 +15,14 @@ Agent sczytuje akcje, które mogą być stanami odpowiadającymi:
   
 lub akcjami:
   * weź zamówienie,
-  * dostarcz zamówienie.
+  * dostarcz zamówienie.  
+
+Algorytm a* zakłada, że każdy z dwóch stanów jest drogą.  
+
+Uwzględnienie kosztu przejścia powoduje, że wejście na ślimaka obecnego na grafice ma inny koszt niż poruszanie się po podłodze.
+Możemy to dostrzec, ponieważ agent wchodzi na ślimaka położonego na prawym skraju, a resztę omija.  
+
+Na obecnym etapie nie zostało jeszcze uwzględnione wyświetlanie zajętego stolika.
 
 ## Powyższe akcje w kodzie:  
 
