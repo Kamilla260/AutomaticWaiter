@@ -69,18 +69,18 @@ Na obecnym etapie nie zostało jeszcze uwzględnione wyświetlanie zajętego sto
         nd = nds.pop(_smalestIndex(nds))
         vst.append(nd.st)
 
-    nxt = map.turnLeft(nd.st)
-    if nxt not in vst:
-        nds.append(Node(nxt, nd.distance + 1, nd.distance + 1 + _h(nxt, goal), nd))
+        nxt = map.turnLeft(nd.st)
+        if nxt not in vst:
+            nds.append(Node(nxt, nd.distance + 1, nd.distance + 1 + _h(nxt, goal), nd))
 
-    nxtR = map.turnRight(nd.st)
-    if nxtR not in vst:
-        nds.append(Node(nxtR, nd.distance + 1, nd.distance + 1 + _h(nxtR, goal), nd))
+        nxtR = map.turnRight(nd.st)
+        if nxtR not in vst:
+            nds.append(Node(nxtR, nd.distance + 1, nd.distance + 1 + _h(nxtR, goal), nd))
 
-    nxtF = map.moveForward(nd.st)
-    if nxtF:
-        if nxtF[0] not in vst:
-            nds.append(Node(nxtF[0], nd.distance + nxtF[1], nd.distance + nxtF[1] + _h(nxtF[0], goal), nd))
+        nxtF = map.moveForward(nd.st)
+        if nxtF:
+            if nxtF[0] not in vst:
+                nds.append(Node(nxtF[0], nd.distance + nxtF[1], nd.distance + nxtF[1] + _h(nxtF[0], goal), nd))
             
       
     def _smalestIndex(l):
