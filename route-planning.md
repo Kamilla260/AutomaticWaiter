@@ -13,7 +13,8 @@ Pominięte zostało zwracanie akcji, ze względu na fakt, że po zwróceniu akcj
 Agent sczytuje akcje, które mogą być stanami odpowiadającymi:
   * lewo,
   * prawo,
-  * do przodu  
+  * do przodu 
+  
 lub akcjami:
   * weź zamówienie,
   * dostarcz zamówienie.
