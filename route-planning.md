@@ -2,7 +2,8 @@
 
 Drugi etap projektu opierał się na rozwinięciu sposobu poruszania się agenta, przyjętej heurystyki oraz udoskonaleniu algorytmu a*.  
 
-Aktualnie: 
+## Etap projektu  
+
   * agent roznosi po jedym zamówieniu do stolika i wraca do kuchni,
   * algorytm a* zwraca listę stanów gdzie odległość pomiędzy nimi, to jedna akcja.  
 
