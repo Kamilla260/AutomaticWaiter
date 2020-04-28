@@ -4,6 +4,7 @@ Drugi etap projektu opierał się na rozwinięciu sposobu poruszania się agenta
 
 ## Etap projektu  
 
+Aktualnie: 
   * agent roznosi po jedym zamówieniu do stolika i wraca do kuchni,
   * algorytm a* zwraca listę stanów gdzie odległość pomiędzy nimi, to jedna akcja.  
 
@@ -61,3 +62,27 @@ Na obecnym etapie nie zostało jeszcze uwzględnione wyświetlanie zajętego sto
             self.actions.extend(self._pathFromTo(self.st, e))
         elif 1 == a:
             print("Odkładam zamówienie")
+
+### Funkcja następnika  
+
+def _expandSmalest(nds, vst, goal):
+    nd = nds.pop(_smalestIndex(nds))
+    vst.append(nd.st)
+
+    nxt = map.turnLeft(nd.st)
+    if nxt not in vst:
+        nds.append(Node(nxt, nd.distance + 1, nd.distance + 1 + _h(nxt, goal), nd))
+
+    nxtR = map.turnRight(nd.st)
+    if nxtR not in vst:
+        nds.append(Node(nxtR, nd.distance + 1, nd.distance + 1 + _h(nxtR, goal), nd))
+
+    nxtF = map.moveForward(nd.st)
+    if nxtF:
+        if nxtF[0] not in vst:
+            nds.append(Node(nxtF[0], nd.distance + nxtF[1], nd.distance + nxtF[1] + _h(nxtF[0], goal), nd))  
+
+### Przyjęta heurystyka  
+
+def _h(s, e):
+    return math.sqrt((s.height-s.height)**2 + (e.width-e.width)**2)
