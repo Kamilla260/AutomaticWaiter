@@ -28,7 +28,7 @@ Na obecnym etapie nie zostało jeszcze uwzględnione wyświetlanie zajętego sto
 
 ## Powyższe akcje w kodzie:  
 
-### Pętla głównej strategii przeszukiwania:  
+### Główna strategia przeszukiwania:  
 
     def tic(self):
         if not self.actions:
@@ -80,7 +80,18 @@ Na obecnym etapie nie zostało jeszcze uwzględnione wyświetlanie zajętego sto
     nxtF = map.moveForward(nd.st)
     if nxtF:
         if nxtF[0] not in vst:
-            nds.append(Node(nxtF[0], nd.distance + nxtF[1], nd.distance + nxtF[1] + _h(nxtF[0], goal), nd))  
+            nds.append(Node(nxtF[0], nd.distance + nxtF[1], nd.distance + nxtF[1] + _h(nxtF[0], goal), nd))
+            
+      
+    def _smalestIndex(l):
+        s = l[0]
+        for i in l:
+            if i.combined_heuristic < s.combined_heuristic:
+                s = i
+        return l.index(s)
+            
+            
+        
 
 ### Przyjęta heurystyka  
 
